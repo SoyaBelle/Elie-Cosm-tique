@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet SoyaBelle(Ohatra)</title>
+    <link rel="stylesheet" href="illustrator.css">
+</head>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const menuBtn = document.getElementById('menuBtn');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+
+    menuBtn.addEventListener('click', function() {
+        dropdownMenu.style.display = (dropdownMenu.style.display === 'block') ? 'none' : 'block';
+    });
+
+    // Akatona ny menu rehefa tsindria any ivelany
+    document.addEventListener('click', function(event) {
+        if (!menuBtn.contains(event.target) && !dropdownMenu.contains(event.target)) {
+            dropdownMenu.style.display = 'none';
+        }
+    });
+});
+</script>
+<body>
+    <header class="hero">
+        <video autoplay loop muted class="hero-background video"><source src="Stock Video Footage & Royalty-Free Videos, 4K + HD - iStock.mp4" type="video/mp4">
+        </video>
+        <div class="logo">Avec SoyaBelle la beauté se révèle</div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="hom.png" alt="Home"></a></li>
+                <li class="APP"><a href="#"><img src="a propo.png" alt=" a propo"></a></li>
+                    <li class="menu-toggle">
+                        <button id="menuBtn"><img src="vertical_settings_mixer_64px.png" alt=" a propo"></button>
+                        <div class="dropdown-menu">
+                            <a href="francais.html">Francais</a>
+                            <a href="Anglais.html">Anglais</a>
+                            <a href="Malagasy.html">Malagasy</a>
+                            
+                        </div>
+                    </li>
+            </ul>
+        </nav>
+        <div class="profile">
+            <img src="LOGO.png" alt="Sary Profile">
+        </div>
+        <div class="hero-text">
+            <h1>SoyaBelle</h1>
+        </div>
+    </header>
+
+    <section class="experience">
+        <h2>Produit SoyaBelle</h2>
+        <div class="skills">
+            <div class="skill-card">
+                <img src="produit 1.jpg" alt="Indesign">
+                <p>Crème de Jour: 35 000Ar</p>
+            </div>
+            <div class="skill-card">
+                <img src="produit 2.jpg" alt="Photoshop">
+                <p>Crème de nuit: 30 000Ar</p>
+            </div>
+            <div class="skill-card">
+                <img src="produit 3.jpg" alt="Filmora">
+                <p>Masque facial: 30 000Ar</p>
+            </div>
+            <div class="skill-card">
+                <img src="produit 4.jpg" alt="3ds Max">
+                <p>Pack Complet: 100 000Ar</p>
+            </div>
+            <div class="skill-card">
+                <img src="produit 5.jpg" alt="Illustrator">
+                <p>Pack Medium: 50 000Ar </p>
+            </div>
+            <div class="skill-card">
+                <img src="produit 6.jpg" alt="Illustrator">
+                <p>Crème hydratant: 35 000Ar</p>
+            </div>
+            <div class="skill-card">
+                <img src="produit 7.jpg" alt="Illustrator">
+                <p>Crème Anti-âge: 60 000Ar</p>
+            </div>
+            <div class="skill-card">
+                <img src="produit 8.jpg" alt="Illustrator">
+                <p>Crème Solaire: 32 000Ar</p>
+            </div>
+        </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="contact-info">
+            <h3>Contact</h3>
+            <p> <img src="contact.png" alt="telephone">034 90 832 35</p>
+            <p> <img src="Facbook.png" alt="Facebook"> SoyaBelle</p>
+            <p> <img src="email.png" alt="Email"> soyabelle@gmail.com</p>
+            <p> <img src="linkdin.png" alt="LinkedIn"> SoyaBelle</p>
+        </div>
+        <div class="personal-info">
+            <p><img src="localisation.png" alt="Email">Soanierana 301</p>
+            <p>Entreprise SoyaBelle</p>
+            <p><img src="mgmadagascarflag_111770.png" alt="SAINA">Nationality: Malagasy</p>
+            <p><img src="student_male_filled_50px.png" alt="Email">Projet</p>
+        </div>
+    </footer>
+</body>
+</html>

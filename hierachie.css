@@ -1,0 +1,127 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fffaf5;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  text-align: center;
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px;
+}
+
+h1 {
+  color: #8B4513;
+  margin-bottom: 40px;
+  font-size: 32px;
+}
+
+.hierarchy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.level {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.member {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  width: 180px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.member:hover {
+  transform: scale(1.05);
+}
+
+.member img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.member h2 {
+  margin: 12px 0 5px;
+  font-size: 18px;
+  color: #5a3e2b;
+}
+
+.member p {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Arrow */
+.arrow.down {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 20px solid #8B4513;
+  margin: 10px auto;
+  animation: bounce 1s infinite;
+}
+
+/* Animation on appear */
+.animate {
+  animation: zoomIn 0.8s ease forwards;
+  opacity: 0;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Arrow bounce */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(5px); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .level {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.retour-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px 40px;
+  }
+  
+  .btn-retour {
+    background-color: #a8561b;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-retour:hover {
+    background-color: #874716;
+  }

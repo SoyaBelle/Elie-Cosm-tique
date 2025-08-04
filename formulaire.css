@@ -1,0 +1,86 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: #fa9d32;
+    color: #a33400;
+  }
+  h1{
+    color: #a14203;
+  }
+  .form-container {
+    background-color: #fde492; /* Fond rose pour le formulaire */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.801);
+    width: 400px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+.bell{
+  font-family: 'Brush Script MT', cursive;
+  color: #cc6f05;
+  font-size: 35px;
+  margin-left: 2%;
+}
+  
+  .form-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    color: #963d02;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .input-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .input-group input {
+    flex: 1;
+  }
+  
+  input[type="text"],
+  input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ffd06b;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .left{ 
+      flex: 1;
+      position: relative;
+    
+  }
+  .cta {
+    position: absolute;
+    bottom: -20px;
+    left: 0 ;
+    background-color: #642a04;
+    color: rgb(255, 193, 60);
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    font-size: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .loko{
+    color: rgb(247, 221, 107);
+  }

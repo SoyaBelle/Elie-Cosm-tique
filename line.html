@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio (Ohatra)</title>
+    <link rel="stylesheet" href="line.css">
+</head>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const menuBtn = document.getElementById('menuBtn');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+
+    menuBtn.addEventListener('click', function() {
+        dropdownMenu.style.display = (dropdownMenu.style.display === 'block') ? 'none' : 'block';
+    });
+
+    // Akatona ny menu rehefa tsindria any ivelany
+    document.addEventListener('click', function(event) {
+        if (!menuBtn.contains(event.target) && !dropdownMenu.contains(event.target)) {
+            dropdownMenu.style.display = 'none';
+        }
+    });
+});
+</script>
+<body>
+    <header class="hero">
+        <video autoplay loop muted class="hero-background video"><source src="Stock Video Footage & Royalty-Free Videos, 4K + HD - iStock.mp4" type="video/mp4">
+        </video>
+        <div class="logo">Avec SoyaBelle la beauté se révèle</div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="hom.png" alt="Home"></a></li>
+                <li class="APP"><a href="line.html"><img src="a propo.png" alt=" a propo"></a></li>
+                    <li class="menu-toggle">
+                        <button id="menuBtn"><img src="vertical_settings_mixer_64px.png" alt=" a propo"></button>
+                        <div class="dropdown-menu">
+                            <a href="francais.html">Francais</a>
+                            <a href="Anglais.html">Anglais</a>
+                            <a href="Malagasy.html">Malagasy</a>
+                            
+                        </div>
+                    </li>
+            </ul>
+        </nav>
+        <div class="profile">
+            <img src="LOGO.png" alt="Sary Profile">
+        </div>
+        <div class="hero-text">
+            <h1>SoyaBelle</h1>
+        </div>
+    </header>
+
+    <section class="experience">
+        <div class="texte">
+                    <p>
+                        Soyabelle est une entreprise de cosmétiques engagée dans la valorisation de la beauté naturelle à travers des soins doux, efficaces et respectueux de la peau. Son ingrédient phare, le soja, est reconnu pour ses propriétés hydratantes, régénérantes et riches en antioxydants.
+                    </p>
+                    <p>
+                        À travers des formulations à base de soja, Soyabelle propose une gamme de produits qui nourrissent, protègent et illuminent la peau. Sa plateforme numérique vise à faciliter l’accès aux produits, renforcer la proximité avec la clientèle et promouvoir une vision saine et responsable de la beauté.
+                    </p>
+                    <p>
+                        <strong>Droit applicable :</strong> Les présentes Conditions Générales d’Utilisation sont régies par le droit malgache puisque l'entreprise est basée à Madagascar. En cas de litige relatif à l’interprétation ou à l’exécution des présentes, les parties s’efforceront de résoudre le différend à l’amiable. À défaut d’accord amiable, le litige sera soumis à la compétence exclusive des tribunaux d’Antananarivo, Madagascar.
+                    </p>
+                    <p><strong>Mentions légales :</strong></p>
+                    
+                        Nom de l'entreprise : SoyaBelle
+                        Forme juridique : SARL (Société à Responsabilité Limitée)
+                        Adresse du siège social : Lot II A 1234, Anjoma, Fianarantsoa, Madagascar
+                        Numéro d'immatriculation : Fianarantsoa 2025 B 01234
+                        Capital social : 5 000 000 MGA
+                    
+                    <p><strong>Coordonnées de contact :</strong></p>
+                    
+                        <p>Téléphone : +261 34 90 632 35</p>
+                        <p>Email : cosmetiquesoyabelle@gmail.com</p>
+                        <p> Site web : <a href="http://www.cosmetiquesoyabelle@gmail.com" target="_blank">www.cosmetiquesoyabelle@gmail.com</a></p>
+                    
+                </div>
+            </section>
+        </div>
+    
+    <footer>
+        <div class="contact-info">
+            <h3>Contact</h3>
+            <p> <img src="contact.png" alt="telephone">034 90 832 35</p>
+            <p> <img src="Facbook.png" alt="Facebook"> SoyaBelle Cosmetique</p>
+            <p> <img src="" alt="Email"> cosmetiquesoyabelle@gmail.com</p>
+            <p> <img src="linkdin.png" alt="LinkedIn"> SoyaBelle</p>
+        </div>
+        <div class="personal-info">
+            <p><img src="localisation.png" alt="Email">Anjoma 301</p>
+            <p>Entreprise SoyaBelle</p>
+            <p><img src="mgmadagascarflag_111770.png" alt="SAINA">Nationality: Malagasy</p>
+            <p><img src="student_male_filled_50px.png" alt="Email">Entreprise</p>
+        </div>
+    </footer>
+</body>
+</html>

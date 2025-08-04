@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffffff;
+    color: #ee0000;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  .bell{
+    font-family: 'Brush Script MT', cursive;
+    color: #a14203;
+    font-size: large;
+    margin-left: 10%;
+  }
+  .logo img {
+    height: 50px; /* na ovaina raha tianao */
+  }
+  
+  
+  .menu a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #7e2902;
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #ffca57;
+    border-radius: 10%;
+    padding: 5px 8px;
+  }
+  
+  
+  main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    gap: 1px;
+  }
+  
+  .left {
+    flex: 1;
+    position: relative;
+  }
+  
+  .left img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+  }
+  
+  .cta {
+    position: absolute;
+    bottom: 10px;
+    left: 0 ;
+    background-color: #642a04;
+    color: rgb(255, 207, 104);
+    padding: 18px 25px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .right {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 40px 20px;
+    background-image: url('Sans titre-3.jpg');
+   
+  }
+  
+  .bubble {
+    background-color: rgb(114, 45, 13);
+    color: rgb(255, 190, 70);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50%;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  h4{
+    margin-top:-10%;
+  }
+  
+  .right h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: hsl(46, 84%, 70%);
+  }
+  
+  .right h1 span {
+    font-family: 'Brush Script MT', cursive;
+    color: #532201;
+    font-size: 70px;
+  }
+  
+  .learn {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fab54d;
+    background-color: #532201;
+    border-radius: 6%;
+    padding: 10px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .side-label {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: rotate(90deg) translateY(-50%);
+    transform-origin: right top;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #722b02;
+  }
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  
+  .footer-column h4 {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: rgb(255, 194, 61);
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-column ul li a {
+    color: #fda33c;
+    text-decoration: none;
+  }
+  
+  .footer-column ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .payment-icons img {
+    height: 30px;
+    margin: 5px;
+  }
+  
+  .footer-social {
+    text-align: center;
+    margin: 30px 0 10px;
+  }
+  
+  .footer-social .social-icons i {
+    margin: 0 10px;
+    font-size: 20px;
+    color: #bbbbbb;
+    cursor: pointer;
+  }
+  
+  .footer-social .social-icons i:hover {
+    color: white;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .footer-bottom a {
+    margin: 0 10px;
+    color: #ffca57;
+    text-decoration: none;
+  }
+  
+  .footer-bottom a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom p {
+    margin-top: 20px;
+    color: #ffffff;
+  }
+  
+  /* Animation: slide-in-from-top */
+@keyframes slideFromTop {
+    0% {
+      opacity: 0;
+      transform: translateY(-400px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Appliquer sur l'image de gauche */
+  .left img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 40px;
+  
+    animation: slideFromTop 1.5s ease-out forwards;
+  }
+  .footer {
+    /* Soloina amin'ny anaran'ny sarinao */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(248, 162, 49);
+    padding: 60px 60px;
+    font-size: 14px;
+    background-image: url('sipa.jpg');
+
+  }
+  
+  

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio (Ohatra)</title>
+    <link rel="stylesheet" href="condition.css">
+</head>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const menuBtn = document.getElementById('menuBtn');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+
+    menuBtn.addEventListener('click', function() {
+        dropdownMenu.style.display = (dropdownMenu.style.display === 'block') ? 'none' : 'block';
+    });
+
+    // Akatona ny menu rehefa tsindria any ivelany
+    document.addEventListener('click', function(event) {
+        if (!menuBtn.contains(event.target) && !dropdownMenu.contains(event.target)) {
+            dropdownMenu.style.display = 'none';
+        }
+    });
+});
+</script>
+<body>
+    <header class="hero">
+        <video autoplay loop muted class="hero-background video"><source src="Stock Video Footage & Royalty-Free Videos, 4K + HD - iStock.mp4" type="video/mp4">
+        </video>
+        <div class="logo">Avec SoyaBelle la beauté se révèle</div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="hom.png" alt="Home"></a></li>
+                <li class="APP"><a href="line.html"><img src="a propo.png" alt=" a propo"></a></li>
+                    <li class="menu-toggle">
+                        <button id="menuBtn"><img src="vertical_settings_mixer_64px.png" alt=" a propo"></button>
+                        <div class="dropdown-menu">
+                            <a href="francais.html">Francais</a>
+                            <a href="Anglais.html">Anglais</a>
+                            <a href="Malagasy.html">Malagasy</a>
+                            
+                        </div>
+                    </li>
+            </ul>
+        </nav>
+        <div class="profile">
+            <img src="LOGO.png" alt="Sary Profile">
+        </div>
+        <div class="hero-text">
+            <h1>SoyaBelle</h1>
+        </div>
+    </header>
+
+    <section class="experience">
+        <h2>Condition d'utilisation</h2>
+        <div class="texte">
+           <p><b> Utilisation de nos services</b></p>
+           <p> En acceptant les conditions d'utilisation de notre site, vous declarez âgé de 18 ans au
+             plus et prêt à s'engager à utiliser le Site de manière responsable, légale et respectueuse 
+             des droits des tiers. Vous êtes seul responsable de l'exactitude des informations que vous fournissez 
+             sur le Site (par exemple, lors d'une commande ou d'une inscription). Si vous créez un compte, 
+             vous êtes responsable de la confidentialité de votre mot de passe et de toutes les activités effectuées sous votre compte.
+              Vous devez informer immédiatement SoyaBelle de toute utilisation non autorisée de votre compte.</p>
+
+              <p><b>Il est strictement interdit de :</b></p>
+            Publier, transmettre ou diffuser tout contenu illégal, diffamatoire, obscène, menaçant, harcelant, injurieux, ou portant atteinte à la vie privée ou aux droits de propriété intellectuelle d'autrui.
+            Tenter d'accéder sans autorisation à des parties sécurisées du Site, aux serveurs de SoyaBelle, ou d'interférer avec la sécurité ou l'intégrité du Site.
+            Utiliser le Site à des fins commerciales non autorisées par SoyaBelle, notamment la revente de produits sans accord formel.
+            
+            <p> <b>Protection des Données Personnelles:</b></p>
+            La collecte et le traitement de vos données personnelles effectués via le Site SoyaBelle sont régis par notre Politique de Confidentialité. Ce document, distinct des présentes CGU, détaille comment SoyaBelle collecte, utilise, stocke, protège et gère vos informations personnelles en conformité avec les lois applicables à Madagascar. Nous vous encourageons vivement à consulter notre Politique de Confidentialité, disponible à l'adresse suivante : [ www.soyabelle.mg/politique-confidentialite].
+            
+            <p> <b>Résiliation:</b></p>
+            <p> Par l'Utilisateur : Vous pouvez à tout moment cesser d'utiliser le Site. Si vous avez créé un compte,
+             vous pouvez demander sa suppression en contactant notre service client à [soyabellemada@gmail.com].</p>
+
+             <p> <b>Par SoyaBelle :</b> </p>
+             <p> SoyaBelle se réserve le droit, 
+            à sa seule discrétion, de suspendre ou de résilier votre accès au Site, 
+            en tout ou en partie, sans préavis ni indemnité, en cas de non-respect des présentes conditions générales d’utilisation, 
+            de comportement abusif, frauduleux, ou pour toute autre raison légitime. </p>
+                </div>
+            </section>
+            
+        </div>
+    
+    <footer>
+        <div class="contact-info">
+            <h3>Contact</h3>
+            <p> <img src="contact.png" alt="telephone">034 90 832 35</p>
+            <p> <img src="Facbook.png" alt="Facebook"> SoyaBelle Cosmetique</p>
+            <p> <img src="" alt="Email"> cosmetiquesoyabelle@gmail.com</p>
+            <p> <img src="linkdin.png" alt="LinkedIn"> SoyaBelle</p>
+        </div>
+        <div class="personal-info">
+            <p><img src="localisation.png" alt="Email">Anjoma 301</p>
+            <p>Entreprise SoyaBelle</p>
+            <p><img src="mgmadagascarflag_111770.png" alt="SAINA">Nationality: Malagasy</p>
+            <p><img src="student_male_filled_50px.png" alt="Email">Entreprise</p>
+        </div>
+    </footer>
+</body>
+</html>

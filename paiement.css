@@ -1,0 +1,98 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #fefefe;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* HEADER */
+  .header {
+    background-color: #ffefd5;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 2px solid #d5a253;
+    background-image: url('sipa.jpg');
+  }
+  
+  .header h1 {
+    color: #ffffff;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .header .subtitle {
+    font-size: 1.2em;
+    color: #fdd25b;
+  }
+  
+  /* MAIN CONTENT */
+  .content {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  .payment-info h2 {
+    color: #a8561b;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+  
+  .payment-info p {
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  /* PLATFORMS LOGOS */
+  .platforms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: start;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .platforms img {
+    height: 50px;
+    width: auto;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+  }
+  
+  /* FOOTER */
+  .footer {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #888;
+    border-top: 1px solid #ccc;
+  }
+  .retour-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px 40px;
+  }
+  
+  .btn-retour {
+    background-color: #a8561b;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-retour:hover {
+    background-color: #874716;
+  }
+  
